@@ -1,16 +1,10 @@
 body {
-  /* background: linear-gradient(to bottom left, #1aa2b0, #0a68d3); */
-  /* background: linear-gradient(to bottom left, #1ab086, #3fafc2); */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Sevillana", cursive;
   letter-spacing: 4px;
 }
-
-/* main { */
-/*   margin: 0 5%; */
-/* } */
 
 * {
   scroll-behavior: smooth;
