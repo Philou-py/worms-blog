@@ -1,0 +1,94 @@
+$xxs: 375px; // xxs < 300px
+$xs: 600px; // 300px < xs < 600px
+$sm: 960px; // 600px < sm < 960px
+$md: 1264px; // 960px < md < 1264px
+$lg: 1904px; // 1264px < lg < 1904px
+
+.weihnachtsmarkt-article {
+  margin: 0 10% 10px;
+
+  h1 {
+    margin-top: 0;
+    font-size: 2em;
+    color: #9e4c82;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  h2 {
+    font-size: 1.5em;
+
+    &:first-of-type {
+      color: #ebb81e;
+    }
+
+    &:last-of-type {
+      color: #db5a42;
+      text-align: right;
+    }
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .hut-img {
+    float: right;
+    margin-left: 15px;
+    border-radius: 10px;
+    position: relative;
+    width: 35%;
+    height: auto;
+
+    @media screen and (max-width: $sm) {
+      float: none;
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  .two-trees {
+    float: right;
+    position: relative;
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: $sm) {
+      float: none;
+      width: 100%;
+      height: 200px;
+      margin: 0;
+      text-align: center;
+      margin: 35px 0 15px;
+    }
+  }
+
+  .img-container {
+    position: relative;
+    height: 100%;
+    width: auto;
+    margin-left: 15px;
+
+    &:first-of-type {
+      @media screen and (max-width: $sm) {
+        margin: 0;
+      }
+    }
+  }
+
+  .tree-metz-img,
+  .tree-worms-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}

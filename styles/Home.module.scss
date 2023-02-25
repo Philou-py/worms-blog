@@ -12,18 +12,6 @@ $lg: 1904px; // 1264px < lg < 1904px
   flex-direction: column;
 }
 
-.img-container {
-  margin-top: 10vh;
-  width: 100%;
-  position: relative;
-  flex-grow: 1;
-}
-
-.img {
-  object-fit: cover;
-  box-shadow: 0px 0px 9px 3px rgba(0,0,0,0.4);
-}
-
 .title {
   font-size: 50px;
   color: #4d4d42;
@@ -36,14 +24,41 @@ $lg: 1904px; // 1264px < lg < 1904px
   max-width: 95%;
   text-align: center;
   padding: 10px;
-  background-color: rgba(241, 227, 227);
+  background-color: #f1e3e3;
   border-radius: 10px;
   box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.3);
 
   @media screen and (max-width: $md) {
     font-size: 40px;
   }
+}
 
+.subtitle {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 30px;
+  color: #998f6f;
+  display: inline-block;
+
+  @media screen and (max-width: $md) {
+    font-size: 26px;
+  }
+
+  span {
+    vertical-align: middle;
+  }
+}
+
+.img-container {
+  margin-top: 10vh;
+  width: 100%;
+  position: relative;
+  flex-grow: 1;
+}
+
+.img {
+  object-fit: cover;
+  box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.4);
 }
 
 .down-arrow-svg {
@@ -67,60 +82,8 @@ $lg: 1904px; // 1264px < lg < 1904px
   }
 }
 
-.button {
-  margin: 10px 0;
-}
-
-.subtitle {
-  margin: 20px 0;
-  text-align: center;
-  font-size: 30px;
-  color: #998f6f;
-  display: inline-block;
-
-  @media screen and (max-width: $md) {
-    font-size: 26px;
-  }
-
-  span {
-    vertical-align: middle;
-  }
-}
-//
-// .button {
-//   display: inline-block;
-//   width: 35%;
-//   margin: 0 auto;
-//   font-family: inherit;
-//   font-size: 23px;
-//   color: white;
-//   background-color: #d7254e;
-//   padding: 10px 10px;
-//   border-radius: 10px;
-//   border: 1px #0c1f35;
-//   box-shadow: 0px 0px 10px 0px #0c1f35;
-//   cursor: pointer;
-//   text-decoration: none;
-//   transition: box-shadow 300ms ease, outline 200ms ease;
-//   text-align: center;
-//
-//   &:hover,
-//   &:focus {
-//     box-shadow: 0px 0px 20px 0px #0c1f35;
-//   }
-//
-//   &:focus {
-//     outline: 2px #f5d000 solid;
-//   }
-//
-//   @media screen and (max-width: $md) {
-//     font-size: 20px;
-//   }
-// }
-
-
-.articles {
-  color: #faf7e8;
+.articles-title {
+  color: #db5a42;
   font-size: 40px;
   text-align: center;
 }
